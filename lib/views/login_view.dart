@@ -15,10 +15,10 @@ class LoginView extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.blueAccent, Colors.lightBlue, Colors.white],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
+          image: DecorationImage(
+            image: AssetImage('assets/images/background_images.jpg'), // Replace with your image path
+            fit: BoxFit.cover, // Make the image cover the entire background
+            alignment: Alignment.center,
           ),
         ),
         child: Center(
@@ -50,25 +50,41 @@ class LoginView extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 20),
-                    TextField(
-                      controller: emailController,
-                      decoration: InputDecoration(
-                        labelText: 'Email',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10.0),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300], // Set the grey color here
+                        borderRadius: BorderRadius.circular(30.0), // Make the box more rounded
+                      ),
+                      child: TextField(
+                        controller: emailController,
+                        decoration: InputDecoration(
+                          labelText: 'youremail@mail.com',
+                          labelStyle: TextStyle(
+                            fontStyle: FontStyle.italic, // Make the label italic
+                          ),
+                          border: InputBorder.none, // Remove the default border
+                          contentPadding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 20.0), // Adjust padding to fit the rounded shape
                         ),
                       ),
                     ),
                     SizedBox(height: 15),
-                    TextField(
-                      controller: passwordController,
-                      decoration: InputDecoration(
-                        labelText: 'Password',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(30.0),
                       ),
-                      obscureText: true,
+                      child: TextField(
+                        controller: passwordController,
+                        decoration: InputDecoration(
+                          labelText: 'Password',
+                          labelStyle: TextStyle(
+                            fontStyle: FontStyle.italic, // Make the label italic
+                          ),
+                          border: InputBorder.none, // Remove the default border
+                          contentPadding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 20.0), // Adjust padding to fit the rounded shape
+                        ),
+                        obscureText: true,
+                      ),
                     ),
                     SizedBox(height: 20),
                     authViewModel.isLoading
@@ -76,9 +92,9 @@ class LoginView extends StatelessWidget {
                         : ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.blueAccent, // Updated button color
-                              padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                              padding: EdgeInsets.symmetric(horizontal: 100, vertical: 15),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10.0),
+                                borderRadius: BorderRadius.circular(30.0),
                               ),
                               shadowColor: Colors.black38, // Button shadow
                             ),

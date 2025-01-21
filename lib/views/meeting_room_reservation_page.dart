@@ -30,7 +30,7 @@ class RoomListScreen extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.blueAccent, Colors.lightBlue, Colors.white],
+            colors: [Colors.blueAccent, Colors.lightBlue, Colors.black],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),

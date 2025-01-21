@@ -12,98 +12,117 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.blueAccent, Colors.lightBlue, Colors.white],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
+          image: DecorationImage(
+            image: AssetImage('assets/images/background_images.jpg'), // Replace with your image path
+            fit: BoxFit.cover,
+            alignment: Alignment.center,
           ),
         ),
         child: Center(
-          child: Card(
-            color: Colors.white.withOpacity(0.9),
+          child: Container(
             margin: const EdgeInsets.all(20.0),
-            shape: RoundedRectangleBorder(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Colors.blueAccent, Colors.lightBlue],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
               borderRadius: BorderRadius.circular(20.0),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.2),
+                  blurRadius: 10,
+                  offset: const Offset(0, 5),
+                ),
+              ],
             ),
-            elevation: 10,
-            child: Padding(
-              padding: const EdgeInsets.all(32.0),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  const Text(
-                    'UPM Library',
-                    style: TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blueAccent,
-                    ),
-                  ),
-                  const SizedBox(height: 32),
-                  SizedBox(
-                    width: 300,
-                    child: ElevatedButton.icon(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const BookReservationPage(),
-                          ),
-                        );
-                      },
-                      icon: const Icon(Icons.library_books),
-                      label: const Text(
-                        'Book Available',
-                        style: TextStyle(color: Colors.white), // Text color updated to white
+            child: Card(
+              margin: EdgeInsets.zero,
+              color: Colors.transparent,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0),
+              ),
+              elevation: 0,
+              child: Padding(
+                padding: const EdgeInsets.all(32.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    const Text(
+                      'UPM Library',
+                      style: TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
                       ),
-                      style: ElevatedButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(vertical: 12),
-                        alignment: Alignment.center,
-                        backgroundColor: Colors.blueAccent, // Updated to match gradient
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
+                    ),
+                    const SizedBox(height: 32),
+                    SizedBox(
+                      width: 300,
+                      child: ElevatedButton.icon(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const BookReservationPage(),
+                            ),
+                          );
+                        },
+                        icon: const Icon(Icons.library_books),
+                        label: const Text(
+                          'Book Available',
+                          style: TextStyle(color: Colors.black),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          alignment: Alignment.center,
+                          backgroundColor: Colors.white,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50.0),
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                  const SizedBox(height: 16),
-                  SizedBox(
-                    width: 300,
-                    child: ElevatedButton.icon(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => RoomListScreen(userId: 'currentUserId'),
+                    const SizedBox(height: 16),
+                    SizedBox(
+                      width: 300,
+                      child: ElevatedButton.icon(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => RoomListScreen(userId: 'currentUserId'),
+                            ),
+                          );
+                        },
+                        icon: const Icon(Icons.meeting_room),
+                        label: const Text(
+                          'Meeting Room Reservation',
+                          style: TextStyle(color: Colors.black),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          alignment: Alignment.center,
+                          backgroundColor: Colors.white,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50.0),
                           ),
-                        );
-                      },
-                      icon: const Icon(Icons.meeting_room),
-                      label: const Text(
-                        'Meeting Room Reservation',
-                        style: TextStyle(color: Colors.white), // Text color updated to white
-                      ),
-                      style: ElevatedButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(vertical: 12),
-                        alignment: Alignment.center,
-                        backgroundColor: Colors.blueAccent, // Updated to match gradient
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
                         ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
         ),
       ),
       bottomNavigationBar: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         child: Row(
           children: [
-            Expanded(
+            Container(
+              width: 100, // Make the logout button smaller
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(
@@ -113,20 +132,20 @@ class HomePage extends StatelessWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blueAccent, // Consistent button color
-                  shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(8),
-                      bottomLeft: Radius.circular(8),
-                    ),
+                  backgroundColor: Colors.blueAccent,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8), // Rounded shape for consistency
                   ),
+                  padding: const EdgeInsets.symmetric(vertical: 12), // Adjust padding for a compact button
                 ),
-                child: const Text(
-                  'Logout',
-                  style: TextStyle(color: Colors.white), // Text color updated to white
+                child: const Icon(
+                  Icons.logout,
+                  color: Colors.white,
+                  size: 20, // Slightly smaller icon size
                 ),
               ),
             ),
+            const SizedBox(width: 10), // Add spacing between the buttons
             Expanded(
               child: ElevatedButton(
                 onPressed: () {
@@ -136,17 +155,14 @@ class HomePage extends StatelessWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blueAccent, // Consistent button color
-                  shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(8),
-                      bottomRight: Radius.circular(8),
-                    ),
+                  backgroundColor: Colors.blueAccent,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
                   ),
                 ),
                 child: const Text(
                   'Reservation Record',
-                  style: TextStyle(color: Colors.white), // Text color updated to white
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
             ),

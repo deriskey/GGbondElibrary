@@ -14,10 +14,10 @@ class SignupView extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.blueAccent, Colors.lightBlue, Colors.white],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
+          image: DecorationImage(
+            image: AssetImage('assets/images/background_images.jpg'), // Replace with your image path
+            fit: BoxFit.cover, // Make the image cover the entire background
+            alignment: Alignment.center,
           ),
         ),
         child: Center(
@@ -27,7 +27,7 @@ class SignupView extends StatelessWidget {
               child: Container(
                 padding: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.9),
+                  color: Colors.black.withOpacity(0.9),
                   borderRadius: BorderRadius.circular(20.0),
                   boxShadow: [
                     BoxShadow(
@@ -54,7 +54,7 @@ class SignupView extends StatelessWidget {
                       decoration: InputDecoration(
                         labelText: 'Email',
                         border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10.0),
+                          borderRadius: BorderRadius.circular(30.0),
                         ),
                       ),
                     ),
@@ -64,7 +64,7 @@ class SignupView extends StatelessWidget {
                       decoration: InputDecoration(
                         labelText: 'Password',
                         border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10.0),
+                          borderRadius: BorderRadius.circular(30.0),
                         ),
                       ),
                       obscureText: true,
@@ -75,9 +75,9 @@ class SignupView extends StatelessWidget {
                         : ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.blueAccent, // Button color
-                              padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                              padding: EdgeInsets.symmetric(horizontal: 100, vertical: 15),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10.0),
+                                borderRadius: BorderRadius.circular(30.0),
                               ),
                               shadowColor: Colors.black38, // Button shadow
                             ),
