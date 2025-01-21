@@ -1,0 +1,206 @@
+{
+  "project_info": {
+    "project_number": "323212705120",
+    "project_id": "library001-a53a4",
+    "storage_bucket": "library001-a53a4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323212705120:android:18ff2475a876588dd83205",
+        "android_client_info": {
+          "package_name": "com.GGBond.ELibrary001"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323212705120-5jq7rkeasdvl07qeqnilpd7kjo7q2url.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.GGBond.ELibrary001",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "323212705120-brihsdu9j7a7lhv7saf4u4nura6l6fii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVyucFRtvp6hZwPCo0dDAQRsfPBZ_2GbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323212705120-brihsdu9j7a7lhv7saf4u4nura6l6fii.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "323212705120-07k78as2nqdulp867fm3r3hq5mp24d4f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.lirary0011"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323212705120:android:60af19699c28caa5d83205",
+        "android_client_info": {
+          "package_name": "com.elibrary.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323212705120-brihsdu9j7a7lhv7saf4u4nura6l6fii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVyucFRtvp6hZwPCo0dDAQRsfPBZ_2GbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323212705120-brihsdu9j7a7lhv7saf4u4nura6l6fii.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "323212705120-07k78as2nqdulp867fm3r3hq5mp24d4f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.lirary0011"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323212705120:android:5b59466486838396d83205",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323212705120-brihsdu9j7a7lhv7saf4u4nura6l6fii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVyucFRtvp6hZwPCo0dDAQRsfPBZ_2GbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323212705120-brihsdu9j7a7lhv7saf4u4nura6l6fii.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "323212705120-07k78as2nqdulp867fm3r3hq5mp24d4f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.lirary0011"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323212705120:android:a789a72ac8b84fd4d83205",
+        "android_client_info": {
+          "package_name": "com.library.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323212705120-brihsdu9j7a7lhv7saf4u4nura6l6fii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVyucFRtvp6hZwPCo0dDAQRsfPBZ_2GbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323212705120-brihsdu9j7a7lhv7saf4u4nura6l6fii.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "323212705120-07k78as2nqdulp867fm3r3hq5mp24d4f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.lirary0011"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323212705120:android:9e5fbc06ad56d3cdd83205",
+        "android_client_info": {
+          "package_name": "com.mycompany.lirary0011"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323212705120-fh670h71sca08po7o0k043lov7jk2dou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.lirary0011",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "323212705120-brihsdu9j7a7lhv7saf4u4nura6l6fii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVyucFRtvp6hZwPCo0dDAQRsfPBZ_2GbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323212705120-brihsdu9j7a7lhv7saf4u4nura6l6fii.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "323212705120-07k78as2nqdulp867fm3r3hq5mp24d4f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.lirary0011"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
